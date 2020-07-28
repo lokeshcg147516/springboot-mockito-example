@@ -45,6 +45,6 @@ public class TodoBusinessImpl {
 		}
 		
 		System.out.println("deleteTodosNotRelatedToHibernate stopped");
-
+		System.out.println("---------------");
 	}
 }
