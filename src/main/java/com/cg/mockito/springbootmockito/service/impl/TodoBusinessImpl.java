@@ -34,6 +34,10 @@ public class TodoBusinessImpl {
 	}
 
 	public void deleteTodosNotRelatedToHibernate(String user) {
+		System.out.println("---------------");
+
+		
+		System.out.println("deleteTodosNotRelatedToHibernate started");
 
 		List<String> Combinedlist = todoService.retriveTodos(user);
 
@@ -42,5 +46,8 @@ public class TodoBusinessImpl {
 				todoService.deleteTodos(todos);
 			}
 		}
+		
+		System.out.println("deleteTodosNotRelatedToHibernate stopped");
+		System.out.println("---------------");
 	}
 }
